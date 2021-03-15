@@ -16,7 +16,7 @@ internal class LottoStoreTest {
         // when
         val lottos = LottoStore().buy(money)
         // then
-        assertThat(lottos.getLottoCount()).isEqualTo(expected)
+        assertThat(lottos.size).isEqualTo(expected)
     }
 
     @Test
